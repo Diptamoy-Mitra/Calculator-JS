@@ -8,12 +8,13 @@ function calculate() {
     } else {
         form.disp.value = eval(form.disp.value);
     }
+
+    var btn = form.veql;
+    btn.addEventListener('dblclick', function() {
+        form.disp.value = "";
+
+        // when we double click on equal button the result will be clear
+
+
+    });
 }
-var btn = form.veql;
-btn.addEventListener('dblclick', function() {
-    form.disp.value = "";
-
-    // when we double click on equal button the result will be clear
-
-
-});
